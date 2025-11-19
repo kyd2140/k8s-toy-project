@@ -30,6 +30,15 @@ spec:
 
   - match:
     - uri:
+        prefix: "/kiali"
+    route:
+    - destination:
+        host: kiali
+        port:
+          number: 20001
+
+  - match:
+    - uri:
         prefix: "/"
     route:
     - destination:
