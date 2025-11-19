@@ -55,7 +55,7 @@ spec:
     spec:
       containers:
       - name: user-api-con
-        image: 760135347993.dkr.ecr.ap-northeast-2.amazonaws.com/user:2
+        image: 760135347993.dkr.ecr.ap-northeast-2.amazonaws.com/user:10
         ports:
         - containerPort: 8080 
 
@@ -126,7 +126,7 @@ spec:
     spec:
       containers:
       - name: profile-api-con
-        image: 760135347993.dkr.ecr.ap-northeast-2.amazonaws.com/profile:2
+        image: 760135347993.dkr.ecr.ap-northeast-2.amazonaws.com/profile:10
         ports:
         - containerPort: 8081
 
