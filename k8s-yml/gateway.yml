@@ -14,4 +14,4 @@ spec:
     hosts:
     - "myprofile.com"
     - "a0f1cebecb1c3433e980da228acf9e36-1548100285.ap-northeast-2.elb.amazonaws.com"
-
+    - "13.125.103.207"
