@@ -26,7 +26,7 @@ spec:
     spec:
       containers:
       - name: user-db-con
-        image: 61.254.18.30:5000/mysql
+        image: 760135347993.dkr.ecr.ap-northeast-2.amazonaws.com/mysql:1
         ports:
         - containerPort: 3306
         
@@ -61,7 +61,7 @@ spec:
     spec:
       containers:
       - name: profile-db-con
-        image: 61.254.18.30:5000/mysql
+        image: 760135347993.dkr.ecr.ap-northeast-2.amazonaws.com/mysql
         ports:
         - containerPort: 3306
         
