@@ -1,0 +1,38 @@
+apiVersion: networking.istio.io/v1beta1
+kind: VirtualService
+metadata:
+  name: myprofile-vs
+  namespace: default
+spec:
+  hosts:
+  - "myprofile.com"
+  gateways:
+  - myprofile-gateway
+  http:
+  - match:
+    - uri:
+        prefix: "/"
+    route:
+    - destination:
+        host: k8s-front-svc
+        port:
+          number: 80
+
+  - match:
+    - uri:
+        prefix: "/api/user"
+    route:
+    - destination:
+        host: user-api-svc
+        port:
+          number: 8080
+
+  - match:
+    - uri:
+        prefix: "/api/profile"
+    route:
+    - destination:
+        host: profile-api-svc
+        port:
+          number: 8081
+
