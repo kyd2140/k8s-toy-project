@@ -9,7 +9,7 @@ data:
   JWT_ACCESS_TOKEN_VALIDITY: "3600000"
   JWT_REFRESH_TOKEN_VALIDITY: "86400000"
   
-  SPRING_DATASOURCE_URL: "jdbc:mysql://user-db-svc:3306/k8stoy_user?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=UTC"
+  SPRING_DATASOURCE_URL: "jdbc:mysql://user-db-svc:3306/k8stoy_user?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
 
   SPRING_JPA_SHOW_SQL: "true"
   SPRING_JPA_HIBERNATE_DDL_AUTO: "update"
@@ -88,7 +88,7 @@ data:
   JWT_ACCESS_TOKEN_VALIDITY: "3600000"
   JWT_REFRESH_TOKEN_VALIDITY: "86400000"
   
-  SPRING_DATASOURCE_URL: "jdbc:mysql://profile-db-svc:3306/k8stoy_profile?useSSL=false&allowPublicKeyRetrieval=true&characterEncoding=UTF-8&serverTimezone=UTC"
+  SPRING_DATASOURCE_URL: "jdbc:mysql://profile-db-svc:3306/k8stoy_user?useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC"
 
   SPRING_JPA_SHOW_SQL: "true"
   SPRING_JPA_HIBERNATE_DDL_AUTO: "update"
